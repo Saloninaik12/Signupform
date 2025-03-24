@@ -1,5 +1,7 @@
 Signup Form
+
 Introduction:
+
 This project is a basic Signup Form that allows users to register by providing their personal details such as name, email, phone number, and password. It validates the input fields and stores the submitted data in a database. After successful registration, users are redirected to a confirmation page displaying their entered details.
 
 Features
