@@ -1,36 +1,68 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('bgimage.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-form {
-    max-width: 400px;
-    margin: auto;
+.registration-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    backdrop-filter: blur(5px); /* Optional: adds a slight blur effect to the background behind the container */
+}
+
+.registration-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.registration-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
-label {
+.registration-form label {
+    text-align: left;
+    margin-bottom: 5px;
     font-weight: bold;
+    color: #333;
 }
 
-input {
-    padding: 8px;
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-button {
-    padding: 10px;
+.registration-form button {
+    width: 100px;
+    padding: 12px;
+    background-color: #4caf50;
     color: #fff;
-    background-color: #007BFF;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+.registration-form button:hover {
+    background-color: #45a049;
 }
